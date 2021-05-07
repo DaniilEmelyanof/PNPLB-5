@@ -2,7 +2,7 @@ package Lab_5;
 
 public class ListUtils
 {
-    public static ListElement insert (ListElement first, String value)//метод для вставки элемента в список
+    public static ListElement insert (ListElement first, String value)
     {
         if (first == null)
             return new ListElement(value);
@@ -16,8 +16,7 @@ public class ListUtils
         }
     }
 
-    public static ListElement filter (ListElement first)//метод "фильтрующий" элемент списка
-            //в данном случае строку, т.е проверяет удовлетворение условию (наличию в строке тольк осимволов латинскоого алфавита)
+    public static ListElement filter (ListElement first)
     {
         ListElement p = null;
         while (first != null)
@@ -29,7 +28,7 @@ public class ListUtils
         return p;
     }
 
-    public static String reduce (ListElement first)//метод конкатенирует строки (складывает их в одну)
+    public static String reduce (ListElement first) 
     {
         String sum = "";
         while (first != null)
@@ -38,7 +37,7 @@ public class ListUtils
             first = first.getNext();
             reduce(first);
         }
-        return sum;//возвращает конкатенирующую строку
+        return sum; 
     }
 
 }
