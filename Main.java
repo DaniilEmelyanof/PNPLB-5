@@ -13,11 +13,11 @@ public class Main
         Lab_5.ListElement first = null;
         for (int i = 0; i < N+1; i++)
         {
-            String value = write.nextLine();//ввод пользователем строки
-            first = Lab_5.ListUtils.insert(first, value);//определение текщего элемента списка и вставка его в список
+            String value = write.nextLine(); 
+            first = Lab_5.ListUtils.insert(first, value); 
         }
-        String result = Lab_5.ListUtils.reduce(Lab_5.ListUtils.filter(first));//определение резульата выполнение алгоритма
-        //и вызов в нем метода фильтрации и конкатенации строк
-        System.out.println(result);//вывод резульатата
+        String result = Lab_5.ListUtils.reduce(Lab_5.ListUtils.filter(first)); 
+        
+        System.out.println(result); 
     }
 }
